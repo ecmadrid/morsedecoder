@@ -7,5 +7,5 @@ A continuación carga el archivo con las palabras inglesas y crea una lista de "
 
 Seguidamente, tomando una instancia de la clase "Word" con padre nulo, creamos un árbol de jerarquía con todas las posibles coincidencias en la cadena Morse de modo que se obtengan todas las posibles concordancias por llamada a una función recursiva.
 
-Por último, se transforma el árbol jerárquico en una lista de cadenas que corresponden a las sentencias decodificadas. Esra lista se vuelca a un archivo de texto.
+Por último, se transforma el árbol jerárquico en una lista de cadenas que corresponden a las sentencias decodificadas. Esta lista se vuelca en la consola.
 
