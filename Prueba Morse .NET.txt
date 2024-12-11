@@ -1,0 +1,11 @@
+El desarrollo se ha realizado del siguiente modo:
+
+Se ha creado una clase "Word" que contiene propiedades privadas y métodos de acceso públicos para contener una referencia a una instancia del mismo tipo que es el padre o "null" en caso de ser la instancia raíz además de una lista de instancias "hijas". Se complementa con dos cadenas, una que contiene la palabra inglesa en mayúsculas y otra su equivalente en código Morse.
+
+El programa A carga el diccionario de letras Morse en una lista de "Tupples" del tipo "letra", "código".
+A continuación carga el archivo con las palabras inglesas y crea una lista de "Tupples" del tipo "palabra", "palabra en Morse" obtenida con la llamada a una función diseñada para este fin.
+
+Seguidamente, tomando una instancia de la clase "Word" con padre nulo, creamos un árbol de jerarquía con todas las posibles coincidencias en la cadena Morse de modo que se obtengan todas las posibles concordancias por llamada a una función recursiva.
+
+Por último, se transforma el árbol jerárquico en una lista de cadenas que corresponden a las sentencias decodificadas. Esra lista se vuelca a un archivo de texto.
+
