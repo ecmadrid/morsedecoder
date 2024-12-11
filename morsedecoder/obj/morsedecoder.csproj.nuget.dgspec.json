@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juans\\source\\repos\\morsedecoder\\morsedecoder\\morsedecoder\\morsedecoder.csproj": {}
+    "/home/juan/Documentos/morsedecoder/morsedecoder/morsedecoder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juans\\source\\repos\\morsedecoder\\morsedecoder\\morsedecoder\\morsedecoder.csproj": {
+    "/home/juan/Documentos/morsedecoder/morsedecoder/morsedecoder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juans\\source\\repos\\morsedecoder\\morsedecoder\\morsedecoder\\morsedecoder.csproj",
+        "projectUniqueName": "/home/juan/Documentos/morsedecoder/morsedecoder/morsedecoder.csproj",
         "projectName": "morsedecoder",
-        "projectPath": "C:\\Users\\juans\\source\\repos\\morsedecoder\\morsedecoder\\morsedecoder\\morsedecoder.csproj",
-        "packagesPath": "C:\\Users\\juans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juans\\source\\repos\\morsedecoder\\morsedecoder\\morsedecoder\\obj\\",
+        "projectPath": "/home/juan/Documentos/morsedecoder/morsedecoder/morsedecoder.csproj",
+        "packagesPath": "/home/juan/.nuget/packages/",
+        "outputPath": "/home/juan/Documentos/morsedecoder/morsedecoder/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juans\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/juan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -60,18 +48,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.100, 9.0.100]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

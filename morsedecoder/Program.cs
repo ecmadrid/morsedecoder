@@ -10,22 +10,25 @@ class Program
     static private List<Tuple<string, string>>? wordlist;
     static void Main(string[] args)
     {
-        // Display the number of command line arguments.
-        //Console.WriteLine(args.Length);
 
-        //string morseCode = "--.--.---.......-.---.-.-.-..-.....--..-....-.-----..-";
-        //string morseCode = "-..";
         string morseCode = "--.--.---.......-.---.-.-.-..-.....--..-....-.-----..-";
 
-    
+        // Load Morse letters file and english words file.
         LoadFiles();
 
         // Get a tree with possible letters from morse code.
 
+        // Root word (null parent).
         Word rootWord = new Word(null);
+
+        // Genetate words tree from Morse code.
+
         DecodeMorse(morseCode, ref rootWord);
+        
+        // Generate sentences from words tree.
         List<string> sentences = GenerateText(rootWord);
 
+        // Show sentences in console.
         foreach (var sentence in sentences)
         {
             Console.WriteLine(sentence);
@@ -33,6 +36,9 @@ class Program
 
     }
 
+/// <summary>
+/// Load Morse letter codes ad english word list.
+/// </summary>
     static void LoadFiles()
     {
         string line;
@@ -40,7 +46,7 @@ class Program
         // Morse codes.
 
         morseCodes = new List<Tuple<string, string>>();
-        StreamReader sr = new StreamReader("files\\kata.txt");
+        StreamReader sr = new StreamReader("files" + Path.DirectorySeparatorChar + "kata.txt");
         line = sr.ReadLine();
         while (line != null)
         {
@@ -58,7 +64,7 @@ class Program
 
         wordlist = new List<Tuple<string, string>>();
 
-        sr = new StreamReader("files\\words.txt");
+        sr = new StreamReader("files" + Path.DirectorySeparatorChar + "words.txt");
         line = sr.ReadLine();
         while (line != null)
         {
@@ -72,6 +78,11 @@ class Program
         sr.Close();
     }
 
+/// <summary>
+/// Convert a string into Morse code.
+/// </summary>
+/// <param name="value"></param>
+/// <returns></returns>
     static string CodeToMorse(string value)
     {
         string result = "";
@@ -90,7 +101,15 @@ class Program
 
         return result;
     }
-        static void DecodeMorse(string morseCode, ref Word parentWord)
+
+
+/// <summary>
+/// Decode a Morse code string and generate a Word class based instances tree.
+/// This is a recursive function.
+/// </summary>
+/// <param name="morseCode"></param>
+/// <param name="parentWord"></param>
+static void DecodeMorse(string morseCode, ref Word parentWord)
      {
 
         foreach (var morseWord in wordlist)
@@ -113,6 +132,12 @@ class Program
         return;
     }
 
+/// <summary>
+/// Generate a sentences list from a Word class based instances tree.
+/// </summary>
+/// <param name="rootWord"></param>
+/// <param name="sentences"></param>
+/// <returns></returns>
     static List<string> GenerateText(Word rootWord, List<string> sentences = null)
     {
         if (sentences == null)
@@ -133,6 +158,8 @@ class Program
                     else
                     {
 
+                    // It's an ended word in branch. We start from it to
+                    // top parent.
                     words.Add(word.alphaWord);
                         Word parentLetter = word.Parent;
                         while (parentLetter != null)
@@ -141,6 +168,7 @@ class Program
                             parentLetter = parentLetter.Parent;
                         }
 
+                    // We need to reverse the list.
                     words.Reverse();
                     alphaMessage = String.Join(' ', words);
                     sentences.Add(alphaMessage);
