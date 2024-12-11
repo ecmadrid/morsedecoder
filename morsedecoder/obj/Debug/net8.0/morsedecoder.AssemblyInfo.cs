@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("morsedecoder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a779257a2fd45a92c1174f5736365ea2d477c788")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ae07c0295350b851fe38dadd210de0602b44bdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("morsedecoder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("morsedecoder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

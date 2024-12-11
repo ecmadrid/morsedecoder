@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace morsedecoder
 {
+    /// <summary>
+        /// Word class. Represent an english word from dictionary and correspondent Morse code.
+        /// </summary>    
     internal class Word
     {
         private Word? parent;
