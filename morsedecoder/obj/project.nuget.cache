@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3M5yLz7nlo0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\juans\\source\\repos\\morsedecoder\\morsedecoder\\morsedecoder\\morsedecoder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juans\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.100\\microsoft.net.sdk.compilers.toolset.9.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
